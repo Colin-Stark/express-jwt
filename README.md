@@ -1,5 +1,9 @@
 # JWT Authentication Web App
 
+**[PREVIEW - LIVE DEMO](https://colin-stark.github.io/express-jwt/)**
+
+![Login Page preview](https://colin-stark.github.io/express-jwt/assets/login.png)
+
 A professional, accessible web application for user authentication using JWT tokens, built with pure HTML5, CSS3, and JavaScript.
 
 ## Features
@@ -51,7 +55,7 @@ This app follows accessibility best practices:
 
 ## Troubleshooting
 
-- **Login/Register fails**: Check server is running on port 8000 and `.env` is configured.
+- **Login/Register fails**: Check server is running on port 8000/hosted URL and `.env` is configured.
 - **Token errors**: Ensure JWT_SECRET is set and tokens aren't expired.
 - **Styling issues**: Clear browser cache or check CSS file paths.
 - **Network errors**: Verify backend endpoints match client requests.
