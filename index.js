@@ -14,7 +14,6 @@ const protectedRouter = require('./routes/protectedRoute')
 /* Middlewares */
 app.use(express.json())
 app.use(cors())
-app.use(express.static('.'))  // Serve static files from current directory
 
 /* Routes */
 app.use('/register', registerRouter)
