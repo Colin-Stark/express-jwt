@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - JWT Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Create Account</h1>
+            <p>Join us today</p>
+        </header>
+        <form id="registerForm" class="auth-form" novalidate>
+            <div class="form-group">
+                <label for="regUsername">Username</label>
+                <input type="text" id="regUsername" name="username" required aria-describedby="regUsernameError">
+                <span id="regUsernameError" class="error-message" role="alert"></span>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" name="password" required aria-describedby="regPasswordError">
+                <span id="regPasswordError" class="error-message" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <p class="switch-link">Already have an account? <a href="index.html">Sign in here</a></p>
+        <div id="regMessage" class="message" role="status" aria-live="polite"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,16 +1,29 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
-
+const cors = require('cors')
 const port = process.env.PORT
 
+/* Router Imports */
+const registerRouter = require('./routes/register')
+const login = require('./routes/login')
+const protectedRouter = require('./routes/protectedRoute')
+
+
+
+/* Middlewares */
+app.use(express.json())
+app.use(cors())
+app.use(express.static('.'))  // Serve static files from current directory
+
+/* Routes */
+app.use('/register', registerRouter)
+app.use('/login', login)
+app.use('/protected', protectedRouter)
+
 app.get('/', (req, res) => {
-    console.log('Express server with JWT BY COLLINS OLOKPEDJE')
     res.status(200).json({ message: 'Express server with JWT BY COLLINS OLOKPEDJE' })
 })
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
-})
 
 module.exports = app
