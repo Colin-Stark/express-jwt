@@ -2,7 +2,7 @@
 
 **[PREVIEW - LIVE DEMO](https://colin-stark.github.io/express-jwt/)**
 
-![Login Page preview](https://github.com/Colin-Stark/express-jwt/blob/main/assets/login.png)
+![Login Page preview](https://github.com/Colin-Stark/express-jwt/blob/main/assets/login.png)(https://colin-stark.github.io/express-jwt/)
 
 A professional, accessible web application for user authentication using JWT tokens, built with pure HTML5, CSS3, and JavaScript.
 
