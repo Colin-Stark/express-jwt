@@ -1,6 +1,6 @@
 // Pure JavaScript for JWT Auth app with accessibility and UX considerations
 
-const BASE_URL = 'http://localhost:8000';
+const BASE_URL = 'https://express-jwt-ten.vercel.app';
 
 document.addEventListener('DOMContentLoaded', function () {
     // Login form handling
